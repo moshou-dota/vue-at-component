@@ -1,0 +1,28 @@
+{
+  "name": "vue-at-component",
+  "version": "1.0.0",
+  "description": "仿钉钉@功能的vue组件",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moshou-dota/vue-at-component.git"
+  },
+  "author": "wupeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moshou-dota/vue-at-component/issues"
+  },
+  "homepage": "https://github.com/moshou-dota/vue-at-component#readme",
+  "dependencies": {
+    "fast-diff": "^1.2.0"
+  },
+  "devDependencies": {
+    "vue": "^2.6.10",
+    "vue-cli": "^2.9.6",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
