@@ -1,12 +1,11 @@
 import Vue from 'vue'
-import AtComponent from '../src/components/at'
+import App from './view/App.vue'
+import AtComponent from '../src'
 
 Vue.use(AtComponent)
 
 new Vue({
-  el: '#app'
-  data: {
-
-  },
-  template: 'App'
+  el: '#app',
+  components: {App},
+  template: '<App/>'
 })

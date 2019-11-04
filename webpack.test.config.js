@@ -10,12 +10,12 @@ function resolve(src) {
 }
 
 module.exports = {
-  entry: resolve('src'),
+  entry: resolve('test'),
   output: {
     path: resolve('dist'),
-    filename: 'at.js'
+    filename: '[name].js'
   },
-  mode: 'production',
+  mode: 'development',
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.common.js'
@@ -36,6 +36,10 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/
       },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        loader: 'file-loader'
+      }
     ]
   },
   plugins: [
@@ -52,5 +56,10 @@ module.exports = {
       template: resolve('test/index.html'),
       filename: 'index.html'
     })
-  ]
+  ],
+  devServer: {
+    contentBase: resolve('dist'),
+    hot: true
+  },
+  devtool: 'source-map'
 }

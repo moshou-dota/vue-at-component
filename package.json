@@ -4,7 +4,8 @@
   "description": "仿钉钉@功能的vue组件",
   "main": "src/index.js",
   "scripts": {
-    "test": "webpack"
+    "test": "webpack-dev-server --open --config webpack.test.config",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,29 @@
   },
   "homepage": "https://github.com/moshou-dota/vue-at-component#readme",
   "dependencies": {
-    "fast-diff": "^1.2.0"
+    "fast-diff": "^1.2.0",
+    "vue": "^2.6.10"
   },
   "devDependencies": {
-    "vue": "^2.6.10",
-    "vue-cli": "^2.9.6",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-runtime": "^6.26.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^8.0.0",
+    "vue-loader": "^15.7.2",
+    "vue-template-compiler": "^2.6.10",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }

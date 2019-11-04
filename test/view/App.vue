@@ -13,7 +13,6 @@ export default {
         {
           name: "cloudcare 服务专家",
           identity: "export",
-          url: "",
           accountId: "jiagouyun"
         },
         {

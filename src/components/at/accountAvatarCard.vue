@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import LineHidden from '_c/line-hidden'
-import CommonAvatarCard from '_c/CommonAvatarCard.vue'
+import LineHidden from '../line-hidden'
+import CommonAvatarCard from '../avatar-card'
 export default {
   name: 'accountAvatarCard',
   props: {
@@ -48,6 +48,8 @@ export default {
 
 <style lang="scss" scoped>
 .account-list-block {
+  display: flex;
+  align-items: center;
   height: 100%;
   &:hover,
   &.active {
@@ -66,11 +68,15 @@ export default {
     }
   }
   .account-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
     flex-direction: column;
     margin-left: 12px;
     height: 100%;
     .account-name {
+      margin: 0;
       width: 100%;
       color: #333333;
       line-height: 18px;

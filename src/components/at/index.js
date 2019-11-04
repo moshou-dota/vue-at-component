@@ -1,3 +1,3 @@
-import AtInput from './atInput'
+import AtInput from './atInput.vue'
 
 export default AtInput

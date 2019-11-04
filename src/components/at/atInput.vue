@@ -13,50 +13,23 @@
         ></accountAvatarCard>
       </li>
     </ul>
-    <Input
+    <textarea
       class="special-input"
       v-model="content"
       type="textarea"
       ref="atInput"
-      :autosize="true"
-      @on-keydown="specialKeyEvent"
-      @on-change="changeInputContent"
-      @click.native="clickInputContent"
-      :placeholder="$t('home.home_nav.issue.input_here')"
-    />
+      rows="10" cols="30"
+      @keydown="specialKeyEvent"
+      @input="changeInputContent"
+      @click="clickInputContent">
+    </textarea>
   </div>
 </template>
 
 <script>
-// const accountList = [
-//   {
-//     name: 'cloudcare 服务专家',
-//     identity: 'export',
-//     url: '',
-//     accountId: 'jiagouyun'
-//   },
-//   {
-//     name: '陈同学陈同学陈同学陈同学陈同学',
-//     identity: 'admin',
-//     accountId: 'acnt-vmGfa1MmSjFGJQgJurbgKf1'
-//   },
-//   {
-//     name: '陈同学陈同2',
-//     remark: '备注备注备注备注备注',
-//     accountId: 'acnt-vmGfa1MmSjFGJQgJurbgKf2'
-//   },
-//   {
-//     name: '陈同学陈同3',
-//     accountId: 'acnt-vmGfa1MmSjFGJQgJurbgKf3'
-//   },
-//   {
-//     name: '陈同学陈同4',
-//     accountId: 'acnt-vmGfa1MmSjFGJQgJurbgKf4'
-//   }
-// ]
 import Diff from 'fast-diff'
-import Caret from '../utils/cursor-position'
-import ClickOutside from '../directive/Clickoutside'
+import Caret from '../../utils/cursor-position'
+import ClickOutside from '../../directive/Clickoutside'
 import accountAvatarCard from './accountAvatarCard.vue'
 
 export default {
@@ -64,7 +37,7 @@ export default {
   props: {
     currentAccountId: String,
     accountList: {
-      type: Object,
+      type: Array,
       required: true
     }
   },
@@ -86,7 +59,7 @@ export default {
     }
   },
   mounted() {
-    this.currentInputEl = this.$refs['atInput'].$refs['textarea']
+    this.currentInputEl = this.$refs['atInput']
   },
   computed: {
     filterAccountList() {

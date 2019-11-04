@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>48*48</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 20.4 0 20.4 11.3142857 0 11.3142857"></polygon>
+    </defs>
+    <g id="0509" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="B-3.1-4-@成员-@成功-Copy" transform="translate(-61.000000, -327.000000)">
+            <g id="分组-3-copy" transform="translate(16.000000, 223.000000)">
+                <g id="48*48" transform="translate(45.000000, 104.000000)">
+                    <circle id="Oval" fill="#DDE0E9" cx="24" cy="24" r="24"></circle>
+                    <g id="Group" transform="translate(14.400000, 10.800000)">
+                        <g id="Group-3" transform="translate(0.000000, 15.085714)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M0.21299061,5.45859539 C-0.107730431,5.90751705 -0.0602396552,6.57432995 0.314937476,6.96339539 C2.92249769,9.66750968 6.37159445,11.3142857 10.1550263,11.3142857 C13.9856323,11.3142857 17.4727217,9.62517235 20.0913631,6.86047189 C20.4630575,6.46775668 20.5061158,5.8005788 20.1819121,5.35494194 C17.8010412,2.08219355 14.2294183,0 10.2341776,0 C6.19746161,0 2.59354491,2.12672074 0.21299061,5.45859539" id="Fill-1" fill="#8F939F" mask="url(#mask-2)"></path>
+                        </g>
+                        <ellipse id="Oval" fill="#8F939F" cx="9.6" cy="5.65714286" rx="6" ry="5.65714286"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
